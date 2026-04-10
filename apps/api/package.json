@@ -1,0 +1,22 @@
+{
+  "name": "@qwenroll/api",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "start": "bun run dist/index.js",
+    "lint": "biome check src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "elysia": "^1.2.24",
+    "@qwenroll/database": "workspace:*",
+    "@qwenroll/auth": "workspace:*",
+    "@qwenroll/config": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/bun": "^1.2.6"
+  }
+}
