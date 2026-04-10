@@ -1,0 +1,19 @@
+{
+  "name": "@qwenroll/web",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "biome check src/"
+  },
+  "dependencies": {
+    "astro": "^5.4.2",
+    "@qwenroll/config": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
